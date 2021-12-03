@@ -1,0 +1,27 @@
+body {
+    background-color: darkblue;
+}
+
+.container-container {
+    display: flex;
+}
+
+.profile-container {
+    flex: 2;
+    align-self: flex-start;
+    height: auto;
+    top: 3%;
+    position: sticky;
+    background-color: grey;
+    padding: 0px 1em;
+    margin: 1em;
+    border-radius: 20px 25px;
+}
+
+.body-container {
+    flex: 5;
+    background-color: grey;
+    padding: 0px 1em;
+    margin: 1em;
+    border-radius: 10px 20px;
+}
