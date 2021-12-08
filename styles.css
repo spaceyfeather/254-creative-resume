@@ -1,5 +1,42 @@
 body {
-    background-color: darkblue;
+    background: url(images/lugias.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#my-name {
+    font-family: 'Damion', cursive;
+    font-size: 32pt;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #381D52;
+}
+
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #213F42;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: midnightblue;
+}
+
+p, ul {
+    font-family: 'Roboto Slab', serif;
+}
+
+ul {
+    padding: 10px 10px;
+    margin-top: 5px;
+}
+
+li span {
+    position: relative;
+    left: -5px;
 }
 
 .container-container {
@@ -12,16 +49,85 @@ body {
     height: auto;
     top: 3%;
     position: sticky;
-    background-color: grey;
+    background-color: rgb(170, 170, 170, 0.95);
     padding: 0px 1em;
     margin: 1em;
     border-radius: 20px 25px;
+    max-width: 300px;
+    display: block;
+    box-shadow: 0px 0px 20px teal;
 }
 
 .body-container {
     flex: 5;
-    background-color: grey;
-    padding: 0px 1em;
+    background-color: rgb(189,189,189, 0.95);
+    padding: 1em;
     margin: 1em;
     border-radius: 10px 20px;
+    max-width: 900px;
+    display: block;
+    align-self: center;
+    box-shadow: 0px 0px 20px teal;
+}
+
+.profile-container img {
+    max-width: 100%;
+}
+
+#contact-info {
+    max-width: 50px;
+    height: auto;
+    margin: auto;
+}
+
+.content-listing {
+    display: flex;
+}
+
+.listing {
+    flex: 1;
+    padding: 10px;
+}
+
+.listing img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px;
+}
+
+.listing h1 {
+    flex-shrink: 0;
+}
+
+#dartrix {
+    outline: 4px solid #3d585b;
+}
+
+@media screen and (max-width:600px) {
+    .container-container {
+        display: block;
+    }
+
+    .profile-container {
+        position: relative;
+        box-shadow: none;
+    }
+
+    body {
+        background: #3d585b;
+    }
+
+    .body-container {
+        box-shadow: none;
+    }
+
+    .profile-container img {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .content-listing {
+        display: block;
+    }
 }
